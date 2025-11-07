@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语单词背诵程序</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="navbar">
+            <a href="#" class="nav-brand">英语学习工具</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="quiz-settings">背诵设置</a>
+                <a href="#" class="nav-link" data-page="quiz">背诵测试</a>
+                <a href="#" class="nav-link" data-page="vocabulary">词源管理</a>
+                <a href="#" class="nav-link" data-page="results">测试结果</a>
+            </div>
+        </nav>
+        
+        <header>
+            <h1>英语单词背诵程序</h1>
+            <p class="subtitle">高效记忆英语单词</p>
+        </header>
+        
+        <div class="content">
+            <!-- 背诵设置页面 -->
+            <div class="card" id="quiz-settings-card">
+                <div class="card-title">背诵设置</div>
+                <div class="setting-group">
+                    <label for="quiz-mode">背诵模式：</label>
+                    <select id="quiz-mode">
+                        <option value="en-to-zh">英翻中</option>
+                        <option value="zh-to-en">中翻英</option>
+                        <option value="en-to-en">英翻英</option>
+                    </select>
+                </div>
+                <div class="setting-group">
+                    <label for="word-source">选择词源：</label>
+                    <select id="word-source">
+                        <!-- 动态加载词源选项 -->
+                    </select>
+                </div>
+                <button id="start-quiz-btn" class="start-btn">开始背诵</button>
+            </div>
+            
+            <!-- 背诵测试页面 -->
+            <div class="card" id="quiz-card" style="display: none;">
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="current-word">1</div>
+                        <div class="stat-label">当前单词</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="total-words">0</div>
+                        <div class="stat-label">总单词数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="correct-count">0</div>
+                        <div class="stat-label">正确</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="incorrect-count">0</div>
+                        <div class="stat-label">错误</div>
+                    </div>
+                </div>
+                
+                <div class="card-title" id="question-title">英文单词</div>
+                <div class="definition" id="question-content"></div>
+                
+                <div class="input-group">
+                    <input type="text" id="answer-input" placeholder="请输入答案..." autocomplete="off">
+                </div>
+                
+                <div class="buttons">
+                    <button class="check-btn" id="check-btn">检查答案</button>
+                    <button class="correct-btn" id="mark-correct-btn" style="display: none;">标记正确 (9)</button>
+                    <button class="incorrect-btn" id="mark-incorrect-btn" style="display: none;">标记错误 (0)</button>
+                    <button class="next-btn" id="next-btn" style="display: none;">下一个 (Enter)</button>
+                </div>
+                
+                <div class="feedback" id="feedback"></div>
+                
+                <div class="shortcut-hint" id="shortcut-hint" style="display: none;">
+                    <p>提示：按 <kbd>Enter</kbd> 切换到下一个单词 | 按 <kbd>9</kbd> 标记为正确 | 按 <kbd>0</kbd> 标记为错误</p>
+                </div>
+            </div>
+            
+            <!-- 词源管理页面 -->
+            <div class="card vocabulary-card" id="vocabulary-card" style="display: none;">
+                <div class="card-title">词源管理</div>
+                
+                <div class="vocab-toolbar">
+                    <button id="import-words-btn">批量导入</button>
+                    <button id="add-word-btn">添加单词</button>
+                    <button id="export-words-btn">导出词源</button>
+                    <button id="create-category-btn">新建分类</button>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" id="search-vocab-input" placeholder="搜索单词或释义...">
+                </div>
+                
+                <div class="category-tabs" id="category-tabs">
+                    <!-- 动态生成词源分类标签 -->
+                </div>
+                
+                <div class="vocabulary-list">
+                    <table class="vocabulary-table">
+                        <thead>
+                            <tr>
+                                <th>单词</th>
+                                <th>词性</th>
+                                <th>中文释义</th>
+                                <th>英文释义</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="vocabulary-table-body">
+                            <!-- 动态填充单词数据 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- 测试结果页面 -->
+            <div class="card result-card" id="results-card" style="display: none;">
+                <div class="result-title">背诵完成!</div>
+                
+                <div class="result-stats">
+                    <div class="result-stat correct-stat">
+                        <div class="result-value" id="final-correct">0</div>
+                        <div class="result-label">正确单词</div>
+                    </div>
+                    <div class="result-stat incorrect-stat">
+                        <div class="result-value" id="final-incorrect">0</div>
+                        <div class="result-label">错误单词</div>
+                    </div>
+                </div>
+                
+                <div class="word-list">
+                    <div class="word-category">
+                        <div class="category-title">正确单词</div>
+                        <div id="correct-words-list"></div>
+                    </div>
+                    
+                    <div class="word-category">
+                        <div class="category-title">需要复习的单词</div>
+                        <div id="incorrect-words-list"></div>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button class="restart-btn" id="restart-all-btn">重新测试全部</button>
+                    <button class="restart-wrong-btn" id="restart-wrong-btn">只测错题</button>
+                    <button class="add-to-wrong-source-btn" id="add-to-wrong-source-btn">加入错题词源</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>英语单词背诵程序 &copy; 2023</p>
+        </footer>
+    </div>
+
+    <!-- 导入单词模态框 -->
+    <div id="import-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title">批量导入单词</div>
+            <div class="form-group">
+                <label for="import-category">导入到分类:</label>
+                <select id="import-category">
+                    <!-- 动态填充分类选项 -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="import-format">数据格式:</label>
+                <select id="import-format">
+                    <option value="json">JSON</option>
+                    <option value="csv">CSV</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="import-data">单词数据:</label>
+                <textarea id="import-data" placeholder="请粘贴JSON或CSV格式的单词数据..."></textarea>
+                <div class="format-hint">
+                    JSON格式: [{"word":"example","partOfSpeech":"n.","chinese":"例子","english":"an example"}]<br>
+                    CSV格式: word,partOfSpeech,chinese,english<br>example,n.,例子,an example
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="cancel-import-btn" class="incorrect-btn">取消</button>
+                <button id="confirm-import-btn" class="correct-btn">导入</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加/编辑单词模态框 -->
+    <div id="word-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title" id="word-modal-title">添加单词</div>
+            <div class="form-group">
+                <label for="word-input">单词:</label>
+                <input type="text" id="word-input" placeholder="输入英文单词">
+            </div>
+            <div class="form-group">
+                <label for="part-of-speech-input">词性:</label>
+                <select id="part-of-speech-input">
+                    <option value="n.">名词 (n.)</option>
+                    <option value="v.">动词 (v.)</option>
+                    <option value="adj.">形容词 (adj.)</option>
+                    <option value="adv.">副词 (adv.)</option>
+                    <option value="prep.">介词 (prep.)</option>
+                    <option value="conj.">连词 (conj.)</option>
+                    <option value="pron.">代词 (pron.)</option>
+                    <option value="phr.">短语 (phr.)</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="chinese-input">中文释义:</label>
+                <input type="text" id="chinese-input" placeholder="输入中文释义">
+            </div>
+            <div class="form-group">
+                <label for="english-input">英文释义:</label>
+                <textarea id="english-input" placeholder="输入英文释义"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="word-category">分类:</label>
+                <select id="word-category">
+                    <!-- 动态填充分类选项 -->
+                </select>
+            </div>
+            <div class="modal-buttons">
+                <button id="cancel-word-btn" class="incorrect-btn">取消</button>
+                <button id="confirm-word-btn" class="correct-btn">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新建分类模态框 -->
+    <div id="category-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title">新建分类</div>
+            <div class="form-group">
+                <label for="new-category-name">分类名称:</label>
+                <input type="text" id="new-category-name" placeholder="输入分类名称">
+            </div>
+            <div class="modal-buttons">
+                <button id="cancel-category-btn" class="incorrect-btn">取消</button>
+                <button id="confirm-category-btn" class="correct-btn">创建</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导出词源模态框 -->
+    <div id="export-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title">导出词源</div>
+            <div class="form-group">
+                <label for="export-category">导出分类:</label>
+                <select id="export-category">
+                    <!-- 动态填充分类选项 -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="export-format">导出格式:</label>
+                <select id="export-format">
+                    <option value="json">JSON</option>
+                    <option value="csv">CSV</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="export-data">导出数据:</label>
+                <textarea id="export-data" readonly></textarea>
+            </div>
+            <div class="modal-buttons">
+                <button id="copy-export-btn" class="check-btn">复制</button>
+                <button id="close-export-btn" class="incorrect-btn">关闭</button>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="js/initWordsData.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/wordManager.js"></script>
+        <script src="js/quizManager.js"></script>
+        <script src="js/uiManager.js"></script>
+        <script src="js/app.js"></script>
+</body>
+</html>
