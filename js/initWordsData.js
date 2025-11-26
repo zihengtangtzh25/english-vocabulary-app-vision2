@@ -18,6 +18,758 @@ const INIT_WORDS_DATA = {
       "english": "to travel or go somewhere with somebody"
     }
   ],
+  "必修三unit1、2":[
+    {
+    "word": "nationality",
+    "partOfSpeech": "n.",
+    "chinese": "国籍",
+    "english": "one's legal right to belong to a nation"
+    },
+    {
+    "word": "journal",
+    "partOfSpeech": "n.",
+    "chinese": "日志；日记；报纸；刊物；杂志",
+    "english": "a written record of the things you do, see, etc. every day；a newspaper or magazine"
+    },
+    {
+    "word": "authority",
+    "partOfSpeech": "n.",
+    "chinese": "权力；权威；威信；影响力",
+    "english": "the power to give orders to people；the power to influence people because they respect your knowledge or official position"
+    },
+    {
+    "word": "journalist",
+    "partOfSpeech": "n.",
+    "chinese": "新闻记者；新闻工作者",
+    "english": "a reporter"
+    },
+    {
+    "word": "annual",
+    "partOfSpeech": "adj.",
+    "chinese": "每年的；一年一次的",
+    "english": "happening or done once every year"
+    },
+    {
+    "word": "spot",
+    "partOfSpeech": "v.",
+    "chinese": "看见；看出；发现",
+    "english": "to see or notice a person or thing, especially suddenly or when it is not easy to do so"
+    },
+    {
+    "word": "entirely",
+    "partOfSpeech": "adv.",
+    "chinese": "全部地；完整地；完全地",
+    "english": "in every way possible; completely"
+    },
+    {
+    "word": "error",
+    "partOfSpeech": "n.",
+    "chinese": "错误；差误",
+    "english": "a mistake, especially one that causes problems or affects the result of something"
+    },
+    {
+    "word": "emotion",
+    "partOfSpeech": "n.",
+    "chinese": "强烈的感情；情绪",
+    "english": "a strong feeling such as love, fear or anger"
+    },
+    {
+    "word": "female",
+    "partOfSpeech": "adj.",
+    "chinese": "女的；女性的",
+    "english": "being a woman or a girl"
+    },
+    {
+    "word": "illustrate",
+    "partOfSpeech": "v.",
+    "chinese": "（用示例、图画等）说明，解释；加插图于；给（书等）做图表",
+    "english": "to make the meaning of something clearer by using examples, pictures, etc.；to use pictures, photographs, diagrams, etc. in a book, etc."
+    },
+    {
+    "word": "ensure",
+    "partOfSpeech": "v.",
+    "chinese": "保证；担保；确保",
+    "english": "to make sure that something happens or is definite"
+    },
+    {
+    "word": "affect",
+    "partOfSpeech": "v.",
+    "chinese": "影响",
+    "english": "to produce a change in somebody / something"
+    },
+    {
+    "word": "permission",
+    "partOfSpeech": "n.",
+    "chinese": "准许；许可；批准",
+    "english": "the act of allowing somebody to do something"
+    },
+    {
+    "word": "subway",
+    "partOfSpeech": "n.",
+    "chinese": "地铁；地铁交通",
+    "english": "an underground railway / railroad system in a city"
+    },
+    {
+    "word": "average",
+    "partOfSpeech": "adj.",
+    "chinese": "普通的；平常的；一般的；典型的；正常的",
+    "english": "ordinary; not special；typical or normal"
+    },
+    {
+    "word": "confirm",
+    "partOfSpeech": "v.",
+    "chinese": "（尤指提供证据来）证实，证明，确认",
+    "english": "to state or show that something is definitely true or correct, especially by providing evidence"
+    },
+    {
+    "word": "click",
+    "partOfSpeech": "v.",
+    "chinese": "点击；（使）发出咔哒声",
+    "english": "to press a button on the mouse to choose something on the computer screen；to make or cause something to make a short sharp sound"
+    },
+    {
+    "word": "flexible",
+    "partOfSpeech": "adj.",
+    "chinese": "能适应新情况的；灵活的",
+    "english": "able to change to suit new conditions or situations"
+    },
+    {
+    "word": "perceive",
+    "partOfSpeech": "v.",
+    "chinese": "注意到；意识到；察觉到",
+    "english": "to notice or become aware of something"
+    },
+    {
+    "word": "soccer",
+    "partOfSpeech": "n.",
+    "chinese": "足球运动",
+    "english": "(American English) football"
+    },
+    {
+    "word": "horrible",
+    "partOfSpeech": "adj.",
+    "chinese": "极坏的；十分讨厌的；可恶的",
+    "english": "very bad or unpleasant"
+    },
+    {
+    "word": "joyfully",
+    "partOfSpeech": "adv.",
+    "chinese": "高兴地；快乐地",
+    "english": "happily"
+    },
+    {
+    "word": "calm",
+    "partOfSpeech": "adj.",
+    "chinese": "宁静的",
+    "english": "quiet and peaceful"
+    },
+    {
+    "word": "breathe",
+    "partOfSpeech": "v.",
+    "chinese": "呼吸",
+    "english": "to take air into your lungs and send it out again through your nose or mouth"
+    },
+    {
+    "word": "merrily",
+    "partOfSpeech": "adv.",
+    "chinese": "高兴地；愉快地",
+    "english": "in a happy, cheerful way"
+    },
+    {
+    "word": "release",
+    "partOfSpeech": "n.",
+    "chinese": "公开；发行",
+    "english": "the act of making something available to the public"
+    },
+    {
+    "word": "release",
+    "partOfSpeech": "v.",
+    "chinese": "发布（新闻等）",
+    "english": "to allow (news, etc) to be made known"
+    },
+    {
+    "word": "innovation",
+    "partOfSpeech": "n.",
+    "chinese": "（新事物、思想或方法的）创造；创新；改革",
+    "english": "the introduction of new things, ideas or ways of doing something"
+    },
+    {
+    "word": "outline",
+    "partOfSpeech": "v.",
+    "chinese": "概述；略述",
+    "english": "to give a description of the main facts or points involved in something"
+    },
+    {
+    "word": "collection",
+    "partOfSpeech": "n.",
+    "chinese": "（常指同类的）收集物，收藏品",
+    "english": "a group of objects, often of the same sort, that have been collected"
+    },
+    {
+    "word": "committee",
+    "partOfSpeech": "n.",
+    "chinese": "委员会",
+    "english": "a group of people chosen to do a particular job, make decisions, etc."
+    },
+    {
+    "word": "announce",
+    "partOfSpeech": "v.",
+    "chinese": "宣布",
+    "english": "to make something known publicly"
+    },
+    {
+    "word": "entry",
+    "partOfSpeech": "n.",
+    "chinese": "参赛作品",
+    "english": "something that you do, write or make to take part in a competition"
+    },
+    {
+    "word": "publish",
+    "partOfSpeech": "v.",
+    "chinese": "出版；发行",
+    "english": "to produce a book, magazine, CD - ROM, etc. and sell it to the public"
+    },
+    {
+    "word": "plot",
+    "partOfSpeech": "n.",
+    "chinese": "故事情节；布局",
+    "english": "the series of events that form the story of a novel, play, film / movie, etc."
+    },
+    {
+    "word": "super",
+    "partOfSpeech": "adv.",
+    "chinese": "非常；极",
+    "english": "extremely"
+    },
+    {
+    "word": "soundtrack",
+    "partOfSpeech": "n.",
+    "chinese": "（电影的）声迹，声带",
+    "english": "all the music, speech and sounds that are recorded for a film / movie"
+    },
+    {
+    "word": "character",
+    "partOfSpeech": "n.",
+    "chinese": "（书籍、戏剧或电影中的）人物，角色",
+    "english": "a person or an animal in a book, play or film / movie"
+    },
+    {
+    "word": "civilization",
+    "partOfSpeech": "n.",
+    "chinese": "文明",
+    "english": "a state of human society that is very developed and organized"
+    },
+    {
+    "word": "novel",
+    "partOfSpeech": "n.",
+    "chinese": "（长篇）小说",
+    "english": "a story long enough to fill a complete book, in which the characters and events are usually imaginary"
+    },
+    {
+    "word": "astronaut",
+    "partOfSpeech": "n.",
+    "chinese": "宇航员；航天员",
+    "english": "a person whose job involves travelling and working in a spacecraft"
+    },
+    {
+    "word": "system",
+    "partOfSpeech": "n.",
+    "chinese": "系统；（思想或理论）体系；体制",
+    "english": "a group of things, pieces of equipment, etc. that are connected or work together；an organized set of ideas or theories or a particular way of doing something"
+    },
+    {
+    "word": "crash",
+    "partOfSpeech": "v.",
+    "chinese": "（使）猛撞；碰撞",
+    "english": "to hit something hard while moving, causing noise and / or damage"
+    },
+    {
+    "word": "disaster",
+    "partOfSpeech": "n.",
+    "chinese": "灾难；灾祸",
+    "english": "an unexpected event, such as a very bad accident, a flood or a fire, that kills a lot of people or causes a lot of damage"
+    },
+    {
+    "word": "pack",
+    "partOfSpeech": "v.",
+    "chinese": "塞进；装（箱）",
+    "english": "to fill something with a lot of people or things；to put clothes, etc. into a bag"
+    },
+    {
+    "word": "entertaining",
+    "partOfSpeech": "adj.",
+    "chinese": "有趣的；娱乐的；使人愉快的",
+    "english": "interesting and amusing"
+    },
+    {
+    "word": "throughout",
+    "partOfSpeech": "prep.",
+    "chinese": "自始至终；贯穿整个时期",
+    "english": "during the whole period of time of something"
+    },
+    {
+    "word": "photographer",
+    "partOfSpeech": "n.",
+    "chinese": "拍照者；摄影师",
+    "english": "a person who takes photographs, especially as a job"
+    },
+    {
+    "word": "rare",
+    "partOfSpeech": "adj.",
+    "chinese": "稀少的；稀罕的",
+    "english": "not done, seen, happening, etc. very often"
+    },
+    {
+    "word": "region",
+    "partOfSpeech": "n.",
+    "chinese": "地区；区域；地方",
+    "english": "a large area of land"
+    },
+    {
+    "word": "custom",
+    "partOfSpeech": "n.",
+    "chinese": "风俗；习俗",
+    "english": "an accepted way of behaving or of doing things in a society or a community"
+    },
+    {
+    "word": "overall",
+    "partOfSpeech": "adv.",
+    "chinese": "全部；总计；一般来说；大致上；总体上",
+    "english": "including everything or everyone; in total；generally"
+    },
+    {
+    "word": "ordinary",
+    "partOfSpeech": "adj.",
+    "chinese": "普通的；平常的；平凡的",
+    "english": "not unusual or different in any way"
+    },
+    {
+    "word": "province",
+    "partOfSpeech": "n.",
+    "chinese": "省份；（某些国家的）一级行政区",
+    "english": "one of the areas that some countries are divided into with its own local government"
+    },
+    {
+    "word": "flour",
+    "partOfSpeech": "n.",
+    "chinese": "（尤指小麦的）面粉；（谷物磨成的）粉",
+    "english": "a fine white or brown powder made from grain, especially wheat, and used in cooking for making bread, cakes, etc."
+    },
+    {
+    "word": "application",
+    "partOfSpeech": "n.",
+    "chinese": "申请；请求；申请书",
+    "english": "a formal (often written) request for something, such as a job, permission to do something or a place at a college or university"
+    },
+    {
+    "word": "equipment",
+    "partOfSpeech": "n.",
+    "chinese": "设备；器材",
+    "english": "the things that are needed for a particular purpose or activity"
+    },
+    {
+    "word": "overseas",
+    "partOfSpeech": "adv.",
+    "chinese": "在国外；向海外",
+    "english": "to or in a foreign country, especially those separated from your country by the sea or ocean"
+    },
+    {
+    "word": "overseas",
+    "partOfSpeech": "adj.",
+    "chinese": "外国的；海外的",
+    "english": "connected with foreign countries, especially those separated from your country by the sea or ocean"
+    },
+    {
+    "word": "remarkable",
+    "partOfSpeech": "adj.",
+    "chinese": "非凡的；奇异的；显著的",
+    "english": "unusual or surprising in a way that causes people to take notice"
+    },
+    {
+    "word": "mission",
+    "partOfSpeech": "n.",
+    "chinese": "太空飞行任务；官方使命",
+    "english": "a flight into space；an important official job that a person or group of people is given to do, especially when they are sent to another country"
+    },
+    {
+    "word": "in spite of",
+    "partOfSpeech": "phr.",
+    "chinese": "不管；尽管",
+    "english": "if you say that somebody did something in spite of a fact, you mean it is surprising that that fact did not prevent them from doing it"
+    },
+    {
+    "word": "chewing gum",
+    "partOfSpeech": "phr.",
+    "chinese": "口香糖",
+    "english": "a sweet / candy that you chew but do not swallow"
+    },
+    {
+    "word": "participate in",
+    "partOfSpeech": "phr.",
+    "chinese": "参加；参与",
+    "english": "to take part in or become involved in an activity"
+    },
+    {
+    "word": "ought to",
+    "partOfSpeech": "phr.",
+    "chinese": "应该；应当",
+    "english": "used to say what is the right thing to do"
+    },
+    {
+    "word": "appeal to",
+    "partOfSpeech": "phr.",
+    "chinese": "有吸引力；有感染力；引起兴趣",
+    "english": "to attract or interest somebody"
+    },
+    {
+    "word": "stewed beef",
+    "partOfSpeech": "phr.",
+    "chinese": "炖牛肉",
+    "english": "a dish in which beef is slowly cooked in liquid, which results in a thick, soup - like food"
+    },
+    {
+    "word": "soy sauce",
+    "partOfSpeech": "phr.",
+    "chinese": "酱油",
+    "english": "a thin dark brown sauce that is made from soya beans and has a salty taste"
+    },
+    {
+    "word": "steamed bun",
+    "partOfSpeech": "phr.",
+    "chinese": "馒头",
+    "english": "a flour dish that is cooked by hot steam"
+    },
+    {
+    "word": "staple food",
+    "partOfSpeech": "phr.",
+    "chinese": "基本食物；主食",
+    "english": "a basic type of food"
+    },
+    {
+    "word": "focus on",
+    "partOfSpeech": "phr.",
+    "chinese": "集中（注意力、精力等）于",
+    "english": "to give attention, effort, etc. to one particular subject, situation or person"
+    },
+    {
+    "word": "flood",
+    "partOfSpeech": "v.",
+    "chinese": "（使）充斥，充满",
+    "english": "to become or make something become available in a place in large numbers"
+    },
+    {
+    "word": "cotton",
+    "partOfSpeech": "n.",
+    "chinese": "棉；棉花；棉布",
+    "english": "a plant grown in warm countries for the soft white hairs around its seeds that are used to make cloth and thread；the cloth made from the cotton plant"
+    },
+    {
+    "word": "guy",
+    "partOfSpeech": "n.",
+    "chinese": "男人；小伙子；家伙",
+    "english": "a man"
+    },
+    {
+    "word": "insect",
+    "partOfSpeech": "n.",
+    "chinese": "昆虫",
+    "english": "any small creature with six legs and a body divided into three parts"
+    },
+    {
+    "word": "sweat",
+    "partOfSpeech": "v.",
+    "chinese": "出汗；流汗",
+    "english": "produce liquid on skin / surface"
+    },
+    {
+    "word": "sweat",
+    "partOfSpeech": "n.",
+    "chinese": "汗",
+    "english": "drops of liquid that appear on the surface of your skin when you are hot, ill / sick or afraid"
+    },
+    {
+    "word": "port",
+    "partOfSpeech": "n.",
+    "chinese": "港口；避风港",
+    "english": "a place where ships load and unload goods or shelter from storms"
+    },
+    {
+    "word": "discount",
+    "partOfSpeech": "n.",
+    "chinese": "折扣",
+    "english": "an amount of money that is taken off the usual cost of something"
+    },
+    {
+    "word": "iron",
+    "partOfSpeech": "v.",
+    "chinese": "（用熨斗）熨，烫平",
+    "english": "to make clothes, etc. smooth by using an iron"
+    },
+    {
+    "word": "iron",
+    "partOfSpeech": "n.",
+    "chinese": "熨斗",
+    "english": "a tool with a flat metal base that can be heated and used to make clothes smooth"
+    },
+    {
+    "word": "export",
+    "partOfSpeech": "n.",
+    "chinese": "出口；输出",
+    "english": "the selling of goods or services to another country"
+    },
+    {
+    "word": "export",
+    "partOfSpeech": "v.",
+    "chinese": "出口；输出",
+    "english": "to sell goods or services to another country"
+    },
+    {
+    "word": "hesitate",
+    "partOfSpeech": "v.",
+    "chinese": "（对某事）犹豫，迟疑不决",
+    "english": "to be slow to speak or act because you feel uncertain or nervous"
+    },
+    {
+    "word": "cash",
+    "partOfSpeech": "n.",
+    "chinese": "现金",
+    "english": "money in the form of coins or notes / bills"
+    },
+    {
+    "word": "profit",
+    "partOfSpeech": "v.",
+    "chinese": "获益；得到好处",
+    "english": "to get something useful from a situation; to be useful to somebody or give them an advantage"
+    },
+    {
+    "word": "profit",
+    "partOfSpeech": "n.",
+    "chinese": "利润；收益；赢利",
+    "english": "the money that you make in business or by selling things, especially after paying the costs involved"
+    },
+    {
+    "word": "living",
+    "partOfSpeech": "n.",
+    "chinese": "生计；谋生；收入",
+    "english": "money to buy the things that you need in life"
+    },
+    {
+    "word": "living",
+    "partOfSpeech": "adj.",
+    "chinese": "活着的；活的",
+    "english": "alive now"
+    },
+    {
+    "word": "wine",
+    "partOfSpeech": "n.",
+    "chinese": "葡萄酒",
+    "english": "an alcoholic drink made from the juice of grapes"
+    },
+    {
+    "word": "jeans",
+    "partOfSpeech": "n.",
+    "chinese": "牛仔裤；粗斜纹棉布裤",
+    "english": "trousers / pants made of strong cotton, especially denim"
+    },
+    {
+    "word": "economic",
+    "partOfSpeech": "adj.",
+    "chinese": "经济的；经济上的；经济学的",
+    "english": "connected with the trade, industry, and development of wealth of a country, an area or a society"
+    },
+    {
+    "word": "involve",
+    "partOfSpeech": "v.",
+    "chinese": "包含；需要；使成为必然部分（或结果）",
+    "english": "to include something as an important or necessary part or result of it"
+    },
+    {
+    "word": "income",
+    "partOfSpeech": "n.",
+    "chinese": "收入；收益；所得",
+    "english": "the money that a person, a region, a country, etc. earns from work, from investing money, from business, etc."
+    },
+    {
+    "word": "treatment",
+    "partOfSpeech": "n.",
+    "chinese": "处理；讨论",
+    "english": "a way of dealing with or discussing a subject, work of art, etc."
+    },
+    {
+    "word": "quantity",
+    "partOfSpeech": "n.",
+    "chinese": "数量",
+    "english": "an amount or a number of something"
+    },
+    {
+    "word": "kit",
+    "partOfSpeech": "n.",
+    "chinese": "全套衣服及装备；成套工具；成套设备",
+    "english": "a set of clothes and equipment that you use for a particular activity；a set of tools or equipment that you use for a particular purpose"
+    },
+    {
+    "word": "gym",
+    "partOfSpeech": "n.",
+    "chinese": "健身房；体育馆",
+    "english": "a room or hall with equipment for doing physical exercise, for example in a school"
+    },
+    {
+    "word": "breath",
+    "partOfSpeech": "n.",
+    "chinese": "呼吸的空气",
+    "english": "the air that you take into your lungs and send out again"
+    },
+    {
+    "word": "habitat",
+    "partOfSpeech": "n.",
+    "chinese": "（动植物的）生活环境；栖息地",
+    "english": "the place where a particular type of animal or plant is normally found"
+    },
+    {
+    "word": "import",
+    "partOfSpeech": "v.",
+    "chinese": "进口；输入；引进",
+    "english": "to bring a product, service, an idea, etc. into one country from another"
+    },
+    {
+    "word": "replace",
+    "partOfSpeech": "v.",
+    "chinese": "代替；取代",
+    "english": "to be used instead of something / somebody else; to do something instead of something / somebody else"
+    },
+    {
+    "word": "certify",
+    "partOfSpeech": "v.",
+    "chinese": "（尤指书面）证明；证实",
+    "english": "(formal) to state officially, especially in writing, that something is true"
+    },
+    {
+    "word": "protest",
+    "partOfSpeech": "v.",
+    "chinese": "（公开）反对；抗议",
+    "english": "to say or do something to show that you disagree with or disapprove of something, especially publicly"
+    },
+    {
+    "word": "awkward",
+    "partOfSpeech": "adj.",
+    "chinese": "令人尴尬的；使人难堪的",
+    "english": "making you feel embarrassed"
+    },
+    {
+    "word": "majority",
+    "partOfSpeech": "n.",
+    "chinese": "大部分；大多数",
+    "english": "the largest part of a group of people or things"
+    },
+    {
+    "word": "smog",
+    "partOfSpeech": "n.",
+    "chinese": "烟雾",
+    "english": "a form of air pollution that is or looks like a mixture of smoke and fog, especially in cities"
+    },
+    {
+    "word": "slide",
+    "partOfSpeech": "n.",
+    "chinese": "幻灯片",
+    "english": "one page of an electronic presentation, that may contain text and images, that is usually viewed on a computer screen or projected onto a larger screen"
+    },
+    {
+    "word": "harvest",
+    "partOfSpeech": "v.",
+    "chinese": "收割（庄稼）",
+    "english": "to cut and gather a crop"
+    },
+    {
+    "word": "honey",
+    "partOfSpeech": "n.",
+    "chinese": "蜂蜜",
+    "english": "a sweet sticky yellow substance made by bees that is spread on bread, etc. like jam"
+    },
+    {
+    "word": "bitter",
+    "partOfSpeech": "adj.",
+    "chinese": "（食物等）味苦的；（争论、分歧等）激烈而不愉快的；充满愤怒与仇恨的",
+    "english": "(of food, etc.) having a strong, unpleasant taste; not sweet；(of arguments, disagreements, etc.) very serious and unpleasant, with a lot of anger and hatred involved"
+    },
+    {
+    "word": "flavour",
+    "partOfSpeech": "n.",
+    "chinese": "（食物或饮料的）味道",
+    "english": "how food or drink tastes"
+    },
+    {
+    "word": "roast",
+    "partOfSpeech": "v.",
+    "chinese": "烘烤，焙，炒（坚果、豆子等）；烘，烤，焙（肉等）",
+    "english": "to cook nuts, beans, etc. in order to dry them and turn them brown; to be cooked in this way；to cook food, especially meat, without liquid in an oven or over a fire; to be cooked in this way"
+    },
+    {
+    "word": "liquid",
+    "partOfSpeech": "n.",
+    "chinese": "液体",
+    "english": "a substance that flows freely and is not a solid or a gas, for example water or oil"
+    },
+    {
+    "word": "liquid",
+    "partOfSpeech": "adj.",
+    "chinese": "液体的",
+    "english": "in the form of a liquid"
+    },
+    {
+    "word": "bar",
+    "partOfSpeech": "n.",
+    "chinese": "（长方形）条，块；酒吧",
+    "english": "a piece of something with straight sides；a place where you can buy and drink alcoholic and other drinks"
+    },
+    {
+    "word": "calculate",
+    "partOfSpeech": "v.",
+    "chinese": "计算；核算",
+    "english": "to use numbers to find out a total number, amount, distance, etc."
+    },
+    {
+    "word": "operation",
+    "partOfSpeech": "n.",
+    "chinese": "运转；运行；操作",
+    "english": "the way that parts of a machine or a system work; the process of making something work"
+    },
+    {
+    "word": "advanced",
+    "partOfSpeech": "adj.",
+    "chinese": "先进的；（课程）高级的；高等的",
+    "english": "having the most modern and recently developed ideas, methods, etc.；(of a course of study) at a high or difficult level"
+    },
+    {
+    "word": "version",
+    "partOfSpeech": "n.",
+    "chinese": "变体；变种；型式",
+    "english": "a form of something that is slightly different from an earlier form or from other forms of the same thing"
+    },
+    {
+    "word": "dozen",
+    "partOfSpeech": "n.",
+    "chinese": "（一）打；十二个",
+    "english": "a group of twelve of the same thing"
+    },
+    {
+    "word": "accurate",
+    "partOfSpeech": "adj.",
+    "chinese": "正确无误的",
+    "english": "correct and true in every detail"
+    },
+    {
+    "word": "rescue",
+    "partOfSpeech": "n.",
+    "chinese": "救援；营救；抢救；获救",
+    "english": "the act of saving something / somebody from a dangerous or difficult situation; the fact of being saved"
+    },
+    {
+    "word": "application",
+    "partOfSpeech": "n.",
+    "chinese": "（尤指理论、发现等的）应用，运用；申请",
+    "english": "the practical use of something, especially a theory, discovery, etc.；a formal (often written) request for something, such as a job, permission to do something or a place at a college or university"
+    }
+  ],
   "必修unit3unit4":[
         {
         "word": "sum up",
